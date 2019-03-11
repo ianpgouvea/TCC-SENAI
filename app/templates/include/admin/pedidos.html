@@ -1,0 +1,58 @@
+
+{% extends 'layout.html'%}
+
+{% block title %} Root Access - Clientes {% endblock %}
+
+{% block body %}
+  {% include 'include/admin/navbar-admin.html'%}
+
+
+<div>
+
+    <div class="p-2 text-center">
+      <form class="form-inline justify-content-center">
+        <input class="form-control col-md-4 mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-dark col-md-2 " type="submit">Buscar</button>
+      </form>
+    </div>
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Cliente</th>
+        <th scope="col">CPF/CNPJ</th>
+        <th scope="col">Pedido</th>
+        <th scope="col">Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Maria da Silva</td>
+        <td>888.333.666-54</td>
+        <td>Licenciamento</td>
+        <td>Em processo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob Inácio</td>
+        <td>223.513.123-00</td>
+        <td>Primeiro Registro</td>
+        <td>Aguardando pagamento</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Academia Santos</td>
+        <td>812831276566123-3</td>
+        <td>Mudança de Característica</td>
+        <td>Aguardando vistoria</td>
+      </tr>
+
+    </tbody>
+  </table>
+  </div>
+
+</div>
+
+{% endblock %}

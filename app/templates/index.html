@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block title %} Início {% endblock %}
+
+{% block body %}
+
+{% include 'include/navbar.html' %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <h1 class="display-4">Nós ajudamos você!</h1>
+  <hr class="display-4">
+  <p class="lead">Parcele seus débitos em até 12 vezes no cartão. <br>A documentação veicular regularizada é necessária para que seu veículo possa rodar com segurança. </p>
+</div>
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Licenciamento</h4>
+      </div>
+      <div class="card-body">
+        <p class="mt-3 mb-4">Faça seu licenciamento 2019 no conforto de casa. <br> Consulte a tabela de parcelamento <br> É rápido, prático e simples!</p>
+
+        <button type="button" class="btn btn-lg btn-block btn-success">Ver mais</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Transferência</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>20 users included</li>
+          <li>10 GB of storage</li>
+          <li>Priority email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-success">Ver mais</button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">2ª VIA</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>30 users included</li>
+          <li>15 GB of storage</li>
+          <li>Phone and email support</li>
+          <li>Help center access</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-success">Ver mais</button>
+      </div>
+    </div>
+  </div>
+
+
+{% include 'include/footer.html' %}
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block body%}
+<head>
+    <link href="/static/signin.css" rel="stylesheet">
+</head>
+<body class="text-center">
+
+  <div class="container">
+    <form class="form-signin" method="POST" action="">
+
+      <h1 class="h3 mb-3 font-weight-normal">Entrar</h1>
+      <label for="cpf" class="sr-only">CPF</label>
+      <input id="cpf" class="form-control" placeholder="CPF" value="{{request.form.cpf}}" required autofocus>
+      <label for="password" class="sr-only">Senha</label>
+      <input type="password" id="password" class="form-control" placeholder="Senha" value="{{request.form.password}}" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Lembrar-me
+        </label>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Entrar</button>
+      </div>
+       <div class="dropdown-divider"></div>
+       <p>Novo por aqui?</p>
+       <a class="btn btn-lg btn-success btn-block" href="/register">Cadastrar</a>
+
+  </form>
+<a class="" href="/">Voltar</a>
+</div>
+</body>
+{% endblock %}

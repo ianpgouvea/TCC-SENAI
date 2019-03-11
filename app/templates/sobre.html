@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% block title %} Sobre {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/sobre.css">
+
+{% endblock %}
+
+{% block body %}
+{% include 'include/navbar.html' %}
+    <div class="container">
+        <div class="row">
+          <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Nossa equipe</h1>
+            <hr class="my-4">
+          </div>
+        </div>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <h4 class="card-title">Patrícia Bezerra</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Patrícia Bezerra</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="http://bit.ly/2TuWK3t" style="color: #000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Júlio Cesar</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Júlio Cesar</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                          <a href="http://bit.ly/2TuWK3t" style="color: #000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                    <h4 class="card-title">Ian Pedro</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Ian Pedro</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="http://bit.ly/2TuWK3t" style="color: #000" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+        <div class="row">
+          <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+            <h1 class="display-4">Nossa Empresa</h1>
+            <hr class="my-4">
+          </div>
+        </div>
+
+        {% include 'include/footer.html' %}
+    </div>
+
+{% endblock %}

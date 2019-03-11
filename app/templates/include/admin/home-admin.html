@@ -1,0 +1,27 @@
+{% extends 'layout.html'%}
+
+{% block head %}
+<link rel="stylesheet" href="/static/dashboard.css">
+<script type="text/javascript" src="/static/js/dashboard.js">
+</script>
+{% endblock %}
+{% block title %} Root Access {% endblock %}
+
+{% block body %}
+  {% include 'include/admin/navbar-admin.html'%}
+  <div class="px-3 py-3 pt-5 pb-md-4 text-center">
+    <h1 class="display-4">Olá, Despachante! </h1>
+  </div>
+  <section id="chart-section" class="chart-section clearfix">
+              <div class="jarallax">
+                  <div class="overlay-black sec-ptb-100">
+                      <div class="container">
+                        <div class="section-title">
+                           <h3 align="center">Gráfico Mensal</h3>
+                        </div>
+                          <div id="chartdiv"></div>
+                      </div>
+                  </div>
+              </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %} Contato {% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" href="/static/contato.css">
+{% endblock %}
+
+{% block body %}
+
+{% include 'include/navbar.html' %}
+
+<div class="container">
+  <div class="row">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Endereço & Contato</h1>
+      <hr class="my-4">
+    </div>
+  </div>
+ <div class="row">
+
+<div style="overflow:hidden;width: 1200px;position: relative;"><iframe width="1200" height="320" src="https://maps.google.com/maps?width=1200&amp;height=320&amp;hl=en&amp;q=Rua%20do%20Gramal%2C%2039%20-%20sala%207+(Despachante%20Campeche)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;"></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+
+</div>
+	<div class="row text-center">
+
+      <div class="col-md-6 box2 pt-4">
+        <a href="" style="color: #000"><i class="fas fa-home fa-3x"></i>
+        <h3 class="d-lg-block d-xl-block">Endereço</h3>
+        <p class="d-lg-block d-xl-block">Despachante Campeche, Rua do Gramal, 39, sala 7</p></a>
+      </div>
+      <div class="col-md-6 box3 pt-4">
+        <a href="mailto:despachantecampeche@gmail.com" style="color: #000"><i class="fas fa-envelope fa-3x"></i>
+        <h3 class="d-lg-block d-xl-block">E-mail</h3>
+        <p class="d-lg-block d-xl-block">despachantecampeche@gmail.com</p></a>
+      </div>
+	</div>
+  <div class="row text-center">
+    <div class="col-md-12 box1 pt-4">
+        <a href="tel:" style="color: #000" target="_blank"><i class="fas fa-phone fa-3x"></i>
+        <h3 class="d-lg-block d-xl-block"> Telefone </h3>
+        <p class="d-lg-block d-xl-block">+55 (48) 99999-0000</p></a>
+      </div>
+
+	</div>
+
+  <div class="row text-center">
+    <div class="col-md-6 box3 pt-4">
+        <a href="http://bit.ly/2TuWK3t" style="color: #000" target="_blank"><i class="fab fa-whatsapp fa-3x"></i>
+        <h3 class="d-lg-block d-xl-block">Patrícia Bezerra</h3>
+        <p class="d-lg-block d-xl-block">+55 (48) 99999-0000</p></a>
+      </div>
+      <div class="col-md-6 box2 pt-4">
+          <a href="http://bit.ly/2TuWK3t" style="color: #000"  target="_blank"><i class="fab fa-whatsapp fa-3x"></i>
+          <h3 class="d-lg-block d-xl-block">Júlio Gouvêa</h3>
+          <p class="d-lg-block d-xl-block">+55 (48) 99998-7778</p></a>
+        </div>
+
+	</div>
+
+
+
+{% include 'include/footer.html' %}
+</div>
+
+{% endblock %}
